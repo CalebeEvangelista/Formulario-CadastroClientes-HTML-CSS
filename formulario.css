@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    color: white;
+    margin-left: 7%;
+}
+
+#sub {
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    margin-left: 10%;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #06153c;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 1em;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, button {
+    margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+textarea {
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.campo {
+    margin-bottom: 2px;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 5px;
+}
+
+.campo input[type ="text"], .campo input[type ="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 3px solid #333333;
+    box-shadow: 2px 2px 4px #000000;
+    display: block ;
+}
+
+.campo select option {
+    padding-left: 1em;
+}
+
+.campo input:focus, select:focus, textarea:focus {
+    background-color: #a3a3a3;
+} 
+
+.botao {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    background: #ffffff;
+    border: 0;
+    margin-bottom: 12px;
+    color: rgb(0, 0, 0);
+    padding: 0.2em;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 1px rgb(158, 158, 158);
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.botao:houver {
+    background-color: #333333;
+}
+
+#check {
+    display: inline-block;
+}

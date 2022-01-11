@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulario Cliente</title>
+</head>
+<body class="body">
+    <div>
+        <h1 id="titulo">Cadastro de clientes</h1>
+        <p id="sub">Por favor preencha todas as lacunas marcadas com um *.</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome*:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome*:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Gênero:</strong></label>
+            <label>
+                <input type="radio" name="genero" value="masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="outro" checked>Outro
+            </label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Região que mora:</strong></label>
+            <select name="regiao" id="regiao">
+                <option selected disabled value="">-Selecione-</option>
+                <option>Norte</option>
+                <option>Sul</option>
+                <option>Nordeste</option>
+                <option>Centro-Oeste</option>
+                <option>Sudeste</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione um canal de contato:</strong></label><br><br>
+                <input type="checkbox" id="contato1" name="contato1" value="zap">
+                <label for="contato1">WhatsApp</label>
+                <input type="checkbox" id="contato2" name="contato2" value="telefone">
+                <label for="contato2">Telefone</label>
+                <input type="checkbox" id="contato3" name="contato3" value="email">
+                <label for="contato3">Email</label>
+                <input type="checkbox" id="contato4" name="contato4" value="instagram">
+                <label for="contato4">Instagram</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte o que você espera encontrar na nossa loja:</strong></label>
+            <textarea name="esperanca" id="esperanca" style="width: 26em;" rows="2"></textarea>
+        </div>
+        
+        <button class="botao" type="submit">Finalizar</button>
+    </form>
+</body>
+</html>
